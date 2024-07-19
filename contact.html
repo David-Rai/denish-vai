@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+</style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact</title>
+  <style>
+    
+.page4{
+  font-family: "Inter", sans-serif;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 60px;
+}
+.p4left{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+}
+.p4left h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    text-shadow: -1px -1px 70px black;
+    color: black;
+}
+.data{
+  height: 40px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+.data i{
+    padding-right: 10px;
+}
+.p4right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 80%;
+}
+.p4right form{
+    box-shadow: 1px 1px 39px -20px black;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 36%;
+    background-color: white;
+
+}
+.name,.email{
+border: none;
+border-bottom: 1px solid grey;
+width: 80%;
+height: 10%;
+padding-left: 10px;
+}
+.message{
+    height: 40%;
+    width: 80%;
+}
+.sbtn{
+    font-size: 14px;
+    height: 50px;
+    border-radius: 10px;
+    width: 120px;
+    border: none;
+    color: white;
+    background-color: rgb(43, 92, 226);
+    font-weight: 500;
+    box-shadow: 1px 1px 39px -20px black;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="page4" id="contact">
+    <div class="p4left">
+      <h1>Get in Touch</h1>
+      <div class="data">
+        <i class="fa-brands fa-facebook"></i>
+        <p>Pradip Thapa magar</p>
+      </div>
+      <div class="data">
+        <i class="fa-regular fa-envelope"></i>
+        <p>pradip.fyby@gmail.com</p>
+      </div>
+      <div class="data">
+        <i class="fa-solid fa-phone"></i>
+        <p>977+ 9824943234</p>
+      </div>
+    </div>
+
+    <div class="p4right">
+      <form onsubmit="sendEmail()">
+          <h3>Send Message</h3>
+          <input type="text" placeholder="Enter your name" class="name"/>
+          <input type="email" placeholder="Enter your email" class="email" />
+          <textarea class="message">
+          </textarea>
+          <button  class="sbtn" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
